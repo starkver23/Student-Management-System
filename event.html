@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ACTIVITY</title>
+    <link rel="stylesheet" href="#" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz"
+        crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+    <style>
+        html,
+        body {
+            min-height: 100%;
+            padding: 0;
+            margin: 0;
+            font-family: Roboto, Arial, sans-serif;
+            font-size: 14px;
+            color: #0D3B66;
+        }
+
+        h1 {
+            margin: 0 0 20px;
+            font-weight: 400;
+            color: #042d53;
+        }
+
+        p {
+            margin: 0 0 5px;
+        }
+
+        .main-block {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background: #f4d35e;
+        }
+
+        form {
+            padding: 25px;
+            margin: 25px;
+            box-shadow: 0 2px 5px #f5f5f5;
+            background: #cae1fa;
+        }
+
+        .fas {
+            margin: 25px 10px 0;
+            font-size: 72px;
+            color: #0D3B66;
+        }
+
+        .fa-envelope {
+            transform: rotate(-20deg);
+        }
+
+        .fa-at,
+        .fa-mail-bulk {
+            transform: rotate(10deg);
+        }
+
+        input,
+        textarea {
+            width: calc(100% - 18px);
+            padding: 8px;
+            margin-bottom: 20px;
+            border: 1px solid #1c87c9;
+            outline: none;
+        }
+
+        input::placeholder {
+            color: #0D3B66;
+        }
+
+        button {
+            width: 100%;
+            padding: 10px;
+            border: none;
+            background: #0D3B66;
+            font-size: 16px;
+            font-weight: 400;
+            color: #fff;
+        }
+
+        button:hover {
+            background: #2371a0;
+        }
+
+        @media (min-width: 568px) {
+            .main-block {
+                flex-direction: row;
+            }
+
+            .left-part,
+            form {
+                width: 50%;
+            }
+
+            .fa-envelope {
+                margin-top: 0;
+                margin-left: 20%;
+            }
+
+            .fa-at {
+                margin-top: -10%;
+                margin-left: 65%;
+            }
+
+            .fa-mail-bulk {
+                margin-top: 2%;
+                margin-left: 28%;
+            }
+        }
+
+        body {
+            background-image: url("https://raw.githubusercontent.com/Programmerhpsd/Student-Management-System/main/academic-gb2633fe06_1920.jpg");
+        }
+
+        form {
+            border-radius: 1rem;
+            justify-content: center;
+            align-items: center;
+            align-self: center;
+            padding-left: 50px;
+            padding-right: 50px;
+        }
+
+        h1 {
+            text-align: center;
+            padding: 10px;
+            font-family: 'Times New Roman', Times, serif;
+        }
+    </style>
+</head>
+
+<body>
+    <h1><b>EVENT MANAGEMENT</b></h1>
+    <form method="post" name="google-sheet">
+        <label for="name"><b>Name</b></label>
+        <input type="text" id="Name_of_activity" name="name"><br><br>
+
+        <label for="date_of_event"><b>Date of Event:</b></label>
+        <input type="date" id="date_of_event" name="date_of_event"><br><br>
+
+        <label for="Email"><b>Email</b></label>
+        <input type="email" id="Email" name="Email"><br><br>
+
+        <label for="organizer"><b> Person/Department:</b></label>
+        <input type="text" id="organizer" name="organizer"><br><br>
+
+        <label for="phonenumber"><b>Phone number:</b></label>
+        <input type="number" id="phonenumber" name="phonenumber"><br><br>
+
+        <label for="Registration number"><b>Registration number:</b></label>
+        <input type="number" id="phonenumber" name="Registration"><br><br>
+
+        <input type="submit" value="Register" name="submit">
+    </form>
+
+
+    <script>
+
+
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbxTx57ievqHoCx2F3utqbbACl3hgZE3XwCc0XmN96TnoipP5Ft9kbu40DmHuwp9z8dPow/exec'
+        const form = document.forms['google-sheet']
+
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                .then(response => alert("Thanks for Contacting us..! We Will Contact You Soon..."))
+                .catch(error => console.error('Error!', error.message))
+        })
+    </script>
+
+</body>
+
+</html>
