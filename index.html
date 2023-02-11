@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student-Management-System</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <nav class="navbar">
+    <div class="navbar-container">
+      <div class="navbar-brand">
+        <a href="index.html">
+          <img src="logo-modified.png" alt="Student-Management-System">
+        </a>
+      </div>
+      <ul class="navbar-nav-left">
+        <li>
+          <a href="#">Home</a>
+        </li>
+        <li>
+          <a href="#">About Us</a>
+        </li>
+        <li>
+          <a href="#">Contact Us</a>
+        </li>
+      </ul>
+
+      <ul class="navbar-nav-right">
+        <li>
+          <a href="#">
+            <img src="marker.png" alt="" />
+            <span>Locate Us</span>
+          </a>
+        </li>
+        <li><button class="btn btn-dark-outline">Sign In</button></li>
+        <li><button class="btn btn-dark">Want to Contribute?</button></li>
+      </ul>
+
+      <!-- Hamburger -->
+      <button type="button" class="hamburger" id="menu-btn">
+        <span class="hamburger-top"></span>
+        <span class="hamburger-middle"></span>
+        <span class="hamburger-bottom"></span>
+
+      </button>
+    </div>
+  </nav>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-menu hidden" id="menu">
+    <ul>
+      <li>
+        <a href="#">Home</a>
+      </li>
+      <li>
+        <a href="about.html">About Us</a>
+      </li>
+      <li>
+        <a href="#">Contact Us</a>
+      </li>
+    </ul>
+    <div class="mobile-menu-bottom">
+      <button class="btn btn-dark-outline">Sign In</button>
+      <button class="btn btn-dark">Contribute Now</button>
+      <div>
+        <a href="#">
+          <img src="marker.png" alt="" />
+          <span>Locate Us</span>
+        </a>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Box A: Introduction-->
+  <section class="box box-a bg-secondary text-center py-md">
+    <div class="box-inner">
+      <h2 class="text-xl">Welcome To SMS</h2>
+      <p class="text-md">We welcome you to Student-Management-System
+        <a href="#">Learn More</a>
+      </p>
+    </div>
+  </section>
+  <!-- Box B: Events-->
+  <section class="box box-b bg-secondary grid-col-2">
+    <img src="event.png" alt="">
+    <div class="box-text">
+      <h2 class="text-xl">Events Manager</h2>
+      <p class="text-md">Welcome to the event manager. Here you'll have the list of all the events being held.</p>
+      <a href="#" class="btn btn-light-outline">Visit Now</a>
+    </div>
+  </section>
+  <!-- Box C: FAQs-->
+  <section class="box box-c bg-secondary grid-col-2 grid-reversed">
+    <img src="query-modified.png" alt="">
+    <div class="box-text">
+      <h2 class="text-xl">FAQs</h2>
+      <p class="text-md">Welcome to the FAQ portal. Let's get some doubts cleared!</p>
+      <a href="#" class="btn btn-light-outline">Clcik Here</a>
+    </div>
+  </section>
+  <!-- Box D: Coding sites-->
+  <section class="box box-d bg-primary grid-col-2">
+    <img src="block-D-modified.png" alt="">
+    <div class="box-text">
+      <h2 class="text-xl">Coding Sites</h2>
+      <p class="text-md">This section is for all the programmers out there. Come and explore the different materials to
+        help you in your journey.</p>
+      <a href="#" class="btn btn-light-outline">Click Here</a>
+    </div>
+  </section>
+  <!-- Box E: Github & Git-->
+  <section class="box box-e bg-secondary grid-col-2 grid-reversed">
+    <img src="block c.png" alt="">
+    <div class="box-text">
+      <h2 class="text-md">Git and Github</h2>
+      <p class="text-sm">Explore more about git and github!</p>
+      <a href="#" class="btn btn-light-outline">Click Here</a>
+    </div>
+  </section>
+  <div class="divider"></div>
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="scoial">
+        <a href="https://in.linkedin.com/">
+          <img class="i"
+            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAeFBMVEX///8AAACmpqb5+fkgICDl5eXb29tfX19ubm58fHzz8/McHBzq6urNzc38/Pzw8PAPDw/X19c0NDSysrJPT0+srKx2dnYqKirf398VFRU9PT2IiIhGRkbFxcW6urpXV1eZmZllZWUxMTGSkpKWlpaBgYGfn59BQUGXtn/iAAAE9klEQVR4nO2dB3riQAxGYxxTXMCmmWYIEML9b7hxSNlQLGlgZyzv/w7gb16YqhkpT08AAAAAAACAOuDHwaw9Cwau2/Fv8JOXzjD1SqLFtjVz3Z5HE7wMvd9sRr7rRj2QYPnsXbKYNMZxcs2vZJW4btpDiDs3/Er2DfgZk7xC0PPGgesG3kuRVgq+j8bYdRPvI5kTgu+DUfXy2Cb9yo6qeCz2xxxDb++6nea8sAQ9T+2iMaNmmS9WrltqSpcp6HkT1001I2MLekedk82Bb+itXTfWhDASGG5dt9aEQiDopRrPi1OJoTdy3Vw5/k5k2HPdXjmBSFDjkihYK0ryvusGi1nLDOf6DlEjmaGn7yTcEhrqWy6a/xsKx2GqbxwmMsNc3967+ethWB1FPGfqur0G8M+/JRrPwLKpJnPdXAMGdKj0h42+TduTrJtq7KSi9WIXum6sGVWXTr95c91UQ9g/4k7fcv8JN9qmMtL2QXh+eX8dhRGMb1j9dKH6em1CC87brht5H6RirlyQvOYe6jvbX5CtKgS7+g6+VwiXN4egwkj3dbLtNb9oqXoSPSPrnd9EDfeN6KB/EYymw69JJzoeCqV7bYI4S4qiSNpN6p0AAAAAAACA/w4/HIS+2vB6FXGy3k87q2EepdFzvjuOO4dWkTXkgNpvj3qL69G+aDWdJNpPqtkrlQ6Rd0f3BFPiDpPuzRvgYsP7wJXR5a83hN5nwK8zMf4l2Q9O5jeHP/PtWHoxqMKJ4C1I2jMMvLMNn+81jM4M/dGC7/fBwaizOjNMeNlIv8hbBuuII8NBT+5XspAnJ7kxLG7l5NK8SN+8ODF8M9Ur2QpnVQeGfVkOxAXCjFb7hj5vCaxgJ3rJa91wYDCHniP6FW0bDqruYtmMBVtyy4b3d9ET3doabs2ELuHnJds1lKY/VMB+o2XVMOMmHTPYcZdFm4b9Bw3CE9x3aBYN/Qf20RLmo2x7hvnMfDN6FWbWrj3DVHocJClqZvh4xqxjhmZDXiUL1Yas6VS1ISupVbUhK39At+Gx8YacvF3lhoxuqtyw03jDiJ5NlRsyjonaDZeNN6TTPrUbPpNHfaeG8/H0rUhK1pNlh5didg65+3ZnOO+uf//9++2lgWSrrob567XQfPgmSb3+gDxfODLc3xo+wVb4pXEtDStTxbiFHD8hCx+5MCRq2gprylAXUQ4Mx9QEL/sgFVS0b5jTW0lRuQ5q32bfkBE+CiSR1de6GbKiR5KL/kPNDBl99J2B4AqHCn3bNmTWntjzv7ipl2HOvBNjFag+QUWjLBtyr277/Ov+nLjTt2zIfl/4yv5kRHQLu4bkJvIbQe1YYu6ya0itXT/E/EMGsW2za8h/WejzHxYRUWGrhpKiffznmcTG1KohtXSZfZXoGFYN6dDfD/waXcTW26qhpB7aTKUh72nBiZi9Na2ToaQsIb9qJVF8xaahqMKrz44s1siQu+0+ceR+lhjdNg1XomwJ9pJPxIRtGjKuM/+C/cyvRoayfx+xVWgoeLr8JAi4wdCioazSMgzraCirnwlDGMIQhjCEIQxhCEMYwhCGMIQhDGEIQxjCEIYwhCEMYQhDGMIQhjCEIQxhCEMYwhCGMIQhDGEIQxjCEIYwhCEMYQhDGMIQhjCEIQxh6NwwtZ1Dun2QYb/N5HYlnwH3E7L/CBdzP6v9f80CAAAAAACgkT8cAX1Rk70hTQAAAABJRU5ErkJggg=="
+            alt="LinkedIn" />
+        </a>
+        <a href="https://www.instagram.com/">
+          <img class="i"
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRyOHDgXz9DjEN8Lq153xA8w_yQ_Ty2l27KuQ&usqp=CAU"
+            alt="Instagram" />
+        </a>
+        <a href="https://www.twitter.com/">
+          <img class="i"
+            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHcAAAB3CAMAAAAO5y+4AAAAXVBMVEX///8dofIAnfIAm/EAmfEVn/IAl/Hg8P202/rx+f75/f/T6fzD4vuf0fiFxffq9f5MsPQppPJru/XZ7fxXtPWNyfen1fnL5vt3wPY+qvQAlPFkuPWZzvg9rPN2vPZv+CZ4AAAC8UlEQVRoge2Z6ZKqMBCFoTut7CHsDuD7P+YFRmcchQQatOpW5fupJIeT7nQWHMdisVgsFovFYrFYLP8/Z69s0yKLI/+DooGXEgIRAYJqwse/ZPQ+2egC5P4AkMn7P34MLN0sWPFQgg+qk7Jbj78Heakw5cjWX+2Kd0P3BfT8ukwRXFFzdDPChCM7WB7iPeo3HFlnaCoMLWMxJ3uDLmvi9EIojK+cz7q9m1ajrNw81N7UKRaaly5II1sMol5Bcrn5PCV8t7+cl54INXap9RIFgOFS40USuPXgegtPNKAZZndMLVxqqqH86RWb2fLnX3SyI6LaLuvEv6OIaq7u5JrofjfrGLJO9Bg9zF6jHOmyeQA4bodhPP3pBJtnZc+gy10TnsIHmP1NzkqbVm7OlHXi537ppLoH05XeL1s3mOkXxKWrb9ltiC9b9zGjH6UB+qaKQllrZd3FcmOmX5gpNGiDq/S6mwvkL2fXNEUXIcXdaoXDghDyhRXX7PUSSydPuX5ZW5yRBBD7a8bUhStXd5qexB1nXm0eCU/m3jW6rC3dBD+nRvjTN9HXXz09a083IXWbRQPA28LuNsw7oNwIFDfCpHZUySGluYYp2yM7LHXM+Sv2nj9rl2WZvSj8IIvTdstQ7pUdLRenrZ5xV1aNTLPfLzfaNR5fjeTUp70y7Cxe7O7Y4twpYHNKH2DXfCiYs3vIZVK2OaniI2QdubFYUn+I7OZiCQck1U34+YbqA6M8IdXq5MKdC8ITMa3zTCl/mzGLH6cojNo7l91ZAhlVrV6YdpwBdXj6KUXu9kujFeStfpzfIysT0A8yvCG2zjkh0+VNevgVv6xS48qPR+wwRq3p7YNzXTVKGKsGKv5p6En3+iVQCERDVEcIywOrRd6KdSVq7ipvF2ELxqUIsH1DrcgTpRtnQpUc7PWO72VqNsYEqLK3fh7z665Q040VTXzfXbVd+IFvckEeVV3TFmlaZEnn1eeDlzuLxWKxWCwWi8VisXyaf3jsH8eZomRXAAAAAElFTkSuQmCC"
+            alt="Twitter" />
+        </a>
+      </div>
+      <p>© 2023 SMS Company. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+
+</body>
+
+</html>
