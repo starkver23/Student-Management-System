@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Sign In</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<style>
+		body {
+			margin: 0;
+			padding: 0;
+			background-image: url('image1.png');
+			background-repeat: no-repeat;
+			background-size: cover;
+		}
+
+		form {
+			background-color: #f2f2f2;
+			padding: 20px;
+			max-width: 400px;
+			margin: 0 auto;
+			border-radius: 5px;
+			box-shadow: 0px 2px 5px #ccc;
+			text-align: center;
+		}
+
+		input[type=text], input[type=password] {
+			padding: 10px;
+			margin: 10px 0;
+			display: block;
+			border: none;
+			border-radius: 3px;
+			width: 100%;
+		}
+
+		button {
+			background-color: #4CAF50;
+			color: #fff;
+			padding: 10px;
+			border: none;
+			border-radius: 3px;
+			cursor: pointer;
+			width: 100%;
+		}
+
+		button:hover {
+			background-color: #3e8e41;
+		}
+	</style>
+</head>
+<body>
+	<form>
+		<h2>Sign In</h2>
+		<label for="username"><b>Username</b></label>
+		<input type="text" placeholder="Enter Username" name="username" required>
+
+		<label for="password"><b>Password</b></label>
+		<input type="password" placeholder="Enter Password" name="password" required>
+
+		<button type="submit" onclick="signIn()">Sign In</button>
+	</form>
+
+	<script>
+		function signIn() {
+			var username = document.getElementsByName("username")[0].value;
+			var password = document.getElementsByName("password")[0].value;
+
+			// Here you can add your validation and authentication logic
+
+			if (username === "exampleuser" && password === "examplepassword") {
+				alert("Sign in successful!");
+			} else {
+				alert("Invalid username or password");
+			}
+		}
+	</script>
+</body>
+</html>
